@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+
     <title>Restaurant</title>
   </head>
   <body>
@@ -49,15 +49,16 @@
           </li>
         </ul>
       </nav>
-      <a href="#contact"
-        class="bg-orange-400 p-5 rounded-xl font-bold hover:bg-orange-500 text-xl uppercase"
+      <a
+        class="bg-orange-400 p-5 rounded-xl font-bold hover:bg-orange-500 text-xl uppercase cursor-pointer"
+        href="#contact"
+        >Reservation</a
       >
-        Reservation
-      </a>
     </header>
 
     <section
-      class="flex flex-col flex-wrap justify-center items-center bg-[url('./src/assets/img/bg2.jpg')] bg-cover bg-center h-screen p-8" id="Accueil"
+      class="flex flex-col flex-wrap justify-center items-center bg-[url('./src/assets/img/bg2.jpg')] bg-cover bg-center h-screen p-8"
+      id="Accueil"
     >
       <h2 class="text-4xl md:text-8xl mb-5 text-black font-bold">
         Dans notre Rest<span class="text-orange-400">aurant</span>
@@ -269,7 +270,9 @@
       <h2 class="mt-15 text-3xl font-bold mb-10 text-center">
         Reser<span class="text-orange-400">vation</span>
       </h2>
-      <form action="https://formspree.io/f/mnpqjweo" method="POST"
+      <form
+        action="https://formspree.io/f/mnpqjweo"
+        method="POST"
         class="mx-auto w-[80%] rounded-2xl bg-white p-8 shadow-lg shadow-black/10"
         id="reservationForm"
       >
@@ -476,7 +479,7 @@
         </div>
       </div>
     </footer>
-  <script>
+    <script>
       const form = document.getElementById("reservationForm");
       const messageBox = document.getElementById("formMessage");
       const submitBtn = form.querySelector("button[type='submit']");
@@ -554,6 +557,5 @@
         }
       }
     </script>
-
   </body>
 </html>
